@@ -21,7 +21,11 @@ requirements = [
 test_requirements = [
     'flake8',
     'kinto',
-    'pytest'
+    'pytest',
+    'pytest-cache',
+    'pytest-cover',
+    'pytest-sugar',
+    'pytest-xdist',
 ]
 
 entry_points = {
