@@ -36,7 +36,7 @@ entry_points = {
 
 setup(
     name='kinto-migrations',
-    version='0.1.0',
+    version='0.1.1.dev0',
     description="Run Kinto HTTP migrations.",
     long_description=readme + '\n\n' + history,
     author="Gabriela Suria",
