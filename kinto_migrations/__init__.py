@@ -30,7 +30,7 @@ def migrate_model(client, model):
 
             for collection_id, collection in collections.items():
 
-                records = collection.pop('$collections', {})
+                records = collection.pop('$records', {})
                 permissions = collection.pop('$permissions', {})
 
                 batch.update_collection(collection=collection_id,
@@ -42,8 +42,8 @@ def migrate_model(client, model):
 
                     permissions = record.pop('$permissions', {})
 
-                    batch.update_record(record_id,
+                    batch.update_record(id=record_id,
                                         bucket=bucket_id,
                                         collection=collection_id,
-                                        data=group,
+                                        data=record,
                                         permissions=permissions)
