@@ -19,14 +19,14 @@ requirements = [
 ]
 
 test_requirements = [
+    'flake8',
     'kinto',
-    'unittest2',
-    'webtest'
+    'pytest'
 ]
 
 entry_points = {
     'console_scripts': [
-        'kinto-migrate = kinto_migrations.__main__'
+        'kinto-migrate = kinto_migrations.__main__:main'
     ],
 }
 
