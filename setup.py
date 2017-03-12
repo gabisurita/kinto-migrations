@@ -19,14 +19,21 @@ requirements = [
 ]
 
 test_requirements = [
-    'mock',
+    'kinto',
     'unittest2',
+    'webtest'
 ]
+
+entry_points = {
+    'console_scripts': [
+        'kinto-migrate = kinto_migrations.__main__'
+    ],
+}
 
 setup(
     name='kinto-migrations',
     version='0.1.0',
-    description="Create Kinto ",
+    description="Run Kinto HTTP migrations.",
     long_description=readme + '\n\n' + history,
     author="Gabriela Suria",
     author_email='gabsurita@gmail.com',
@@ -48,5 +55,6 @@ setup(
         'Programming Language :: Python :: 3.4',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
+    entry_points=entry_points,
 )

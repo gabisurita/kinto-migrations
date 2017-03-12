@@ -52,6 +52,15 @@ Let's imagine we want to create initialize our Kinto server with some stuff:
                         hello_world: {}
 
 
+Let's save this to a YAML file and run::
+
+    $ kinto-migrate --file models.yml --server https://kinto.dev.mozaws.net/v1/ --auth admin:pass
+
+You should specify the server and an authentication token. By default the
+migrate tool will prompt for a ``models.yml`` file on the current directory or
+you can specify a file using `--file`` or ``-f``.
+
+
 This will crete if not exist all the listed endpoints on the Kinto API.
 
 

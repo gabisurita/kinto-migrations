@@ -28,4 +28,4 @@ client = cli_utils.create_client_from_args(args)
 models = yaml.load(open(args.file or 'models.yml'))
 
 # Run migration
-migrate_model(models)
+migrate_model(client, models)
