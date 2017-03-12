@@ -1,6 +1,13 @@
 Kinto Migrations
 ################
 
+.. image:: https://travis-ci.org/gabisurita/kinto-migrations.svg?branch=master
+    :target: https://travis-ci.org/gabisurita/kinto-migrations
+
+.. image:: https://coveralls.io/repos/github/gabisurita/kinto-migrations/badge.svg?branch=master
+    :target: https://coveralls.io/github/gabisurita/kinto-migrations?branch=master
+
+
 CLI tool to perform high level migrations using the HTTP API on a Kinto Server.
 
 Installation
