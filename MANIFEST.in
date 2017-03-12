@@ -1,0 +1,4 @@
+include *.rst README.rst CHANGELOG.rst tox.ini .coveragerc
+include *.txt
+include *.yml
+include LICENSE
