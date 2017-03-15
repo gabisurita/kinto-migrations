@@ -10,6 +10,8 @@ Kinto Migrations
 
 CLI tool to perform high level migrations using the HTTP API on a Kinto Server.
 
+**Note:** Consider using the oficial library `Kinto Wizard <https://github.com/Kinto/kinto-wizard>`_
+
 Installation
 ============
 
